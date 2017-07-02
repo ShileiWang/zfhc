@@ -1,0 +1,43 @@
+<extend name="Index:base" />
+<block name="title"><title>导航栏列表</title></block>
+<block name="sidebar">
+	<include file="Index:sidebar" />
+</block>
+
+<block name="content">
+		<div id="content" class="col-sm-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"><i class="glyphicon glyphicon-header"></i> 导 航 栏 列 表</h4>
+				</div>
+
+				<div class="panel-body">
+					<table class="table table-hover table-bordered table-condensed">
+						<tr>
+							<td>序号</td>
+							<td>导航栏名</td>
+							<td>状态</td>
+							<td>操作</td>
+						</tr>
+						<volist name="data" id="vo">
+							<tr>
+								<td>{$vo['id']}</td>
+								<td>{$vo['dhl']}</td>
+								<td>{$vo['block']}</td>
+								<td>
+									<div class="btn-group btn-group-xs">
+										<a href="{:U('Admin/Dhl/dhlSave',array('id'=>$vo['id']))}" class="btn btn-warning"><i class="glyphicon glyphicon-edit"></i></a><a href="{:U('Admin/Dhl/deleteHandle',array('id'=>$vo['id']))}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+									</div>
+									</td>
+							</tr>
+						</volist>
+							<tr>
+								<td colspan="4">{$page}</td>
+							</tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+</block>
+
