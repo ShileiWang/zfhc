@@ -1,0 +1,2580 @@
+[ 2017-07-08T08:44:25+08:00 ] ::1 /TP/Admin/Auth/accessList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.255014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033001s ]
+
+[ 2017-07-08T08:44:26+08:00 ] ::1 /TP/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.148008s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.148008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.247014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034002s ]
+
+[ 2017-07-08T08:44:27+08:00 ] ::1 /TP/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-08T08:44:36+08:00 ] ::1 /TP/Admin/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_members` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `zfhc_members` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T08:44:39+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0840s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0360s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_dhl` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_dhl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zfhc_dhl` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T08:44:43+08:00 ] ::1 /TP/Admin/Slideshow/slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T08:44:47+08:00 ] ::1 /TP/Admin/Slideshow/slideshowAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:08:05+08:00 ] ::1 /TP/Admin/Slideshow/slideshowAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-07-08T09:08:16+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-07-08T09:17:32+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0040s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `zfhc_slideshow` (`photo`,`create_time`,`name`,`url`,`describe`,`sort`,`belong`) VALUES ('delu_bgimg.png','2017-07-08 09:17:32','0','0','0','0','0') [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-08T09:17:34+08:00 ] ::1 /TP/Admin/Slideshow/U(Slideshow)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+ERR: 非法操作:U(Slideshow)
+
+[ 2017-07-08T09:18:22+08:00 ] ::1 /TP/Admin/Slideshow/U(Slideshow)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+ERR: 非法操作:U(Slideshow)
+
+[ 2017-07-08T09:18:30+08:00 ] ::1 /TP/Admin/Slideshow/slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:21:22+08:00 ] ::1 /TP/Admin/Slideshow/dhlSave/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+ERR: 非法操作:dhlSave
+
+[ 2017-07-08T09:23:31+08:00 ] ::1 /TP/Admin/Slideshow/slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:24:44+08:00 ] ::1 /TP/Admin/Slideshow/slideshowadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-08T09:24:54+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `zfhc_slideshow` (`photo`,`create_time`,`name`,`url`,`describe`,`sort`,`belong`) VALUES ('denglu_hu.png','2017-07-08 09:24:54','','','','0','') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:24:56+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-08T09:25:55+08:00 ] ::1 /TP/Admin/Slideshow/slideshowAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:26:02+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0270s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0030s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-07-08T09:27:02+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0060s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `zfhc_slideshow` (`photo`,`create_time`,`name`,`url`,`describe`,`sort`,`belong`) VALUES ('596034e660d99.png','2017-07-08 09:27:02','','','','0','') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:27:04+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:28:32+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:29:09+08:00 ] ::1 /TP/Admin/Slideshow/deleteHandle/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0060s ]
+SQL: DELETE FROM `zfhc_slideshow` WHERE `id` = 5 [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:29:11+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0290s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:29:15+08:00 ] ::1 /TP/Admin/Slideshow/deleteHandle/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0060s ]
+SQL: DELETE FROM `zfhc_slideshow` WHERE `id` = 4 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-08T09:29:17+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:29:41+08:00 ] ::1 /TP/Admin/Slideshow/deleteHandle/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+SQL: DELETE FROM `zfhc_slideshow` WHERE `id` = 6 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:29:44+08:00 ] ::1 /TP/Admin/Slideshow/Slideshow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_slideshow` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`photo`,`url`,`describe`,`sort`,`belong`,`create_time` FROM `zfhc_slideshow` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T09:47:35+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+ERR: 1146:Table 'tp_zfhc.zfhc_companynews' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zfhc_companynews`
+ERR: 1146:Table 'tp_zfhc.zfhc_companynews' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zfhc_companynews`
+
+[ 2017-07-08T12:03:03+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.1700s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0470s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+ERR: 1146:Table 'tp_zfhc.zfhc_companynews' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zfhc_companynews`
+ERR: 1146:Table 'tp_zfhc.zfhc_companynews' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zfhc_companynews`
+
+[ 2017-07-08T12:04:12+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_companynews` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`content` FROM `zfhc_companynews` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-07-08T12:07:39+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_companynews` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`content` FROM `zfhc_companynews` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:09:14+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_companynews` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`content` FROM `zfhc_companynews` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:10:00+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_companynews` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`content` FROM `zfhc_companynews` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:10:05+08:00 ] ::1 /TP/Admin/Companynews/companynews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zfhc_companynews` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`content` FROM `zfhc_companynews` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:10:08+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:11:48+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:12:56+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:13:12+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:13:32+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:13:38+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0590s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:13:41+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T12:13:51+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:14:48+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T12:31:57+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.258014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-08T13:46:38+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0330s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-07-08T13:48:52+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-08T13:49:33+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:49:41+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:50:34+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:54:32+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:54:52+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:57:36+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:58:17+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:58:57+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:59:22+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-08T13:59:37+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T13:59:52+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:01:39+08:00 ] ::1 /TP/Admin/Slideshow/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0510s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_slideshow` [ RunTime:0.1070s ]
+NOTIC: [8] Undefined index: url D:\xampp\htdocs\TP\Application\Admin\Controller\SlideshowController.class.php 第 51 行.
+NOTIC: [8] Undefined index: describe D:\xampp\htdocs\TP\Application\Admin\Controller\SlideshowController.class.php 第 52 行.
+NOTIC: [8] Undefined index: sort D:\xampp\htdocs\TP\Application\Admin\Controller\SlideshowController.class.php 第 53 行.
+NOTIC: [8] Undefined index: belong D:\xampp\htdocs\TP\Application\Admin\Controller\SlideshowController.class.php 第 54 行.
+ERR: 1048:Column 'url' cannot be null
+ [ SQL语句 ] : INSERT INTO `zfhc_slideshow` (`create_time`,`name`,`url`,`describe`,`sort`,`belong`) VALUES ('2017-07-08 14:01:39','123',NULL,NULL,NULL,NULL)
+ERR: 1048:Column 'url' cannot be null
+ [ SQL语句 ] : INSERT INTO `zfhc_slideshow` (`create_time`,`name`,`url`,`describe`,`sort`,`belong`) VALUES ('2017-07-08 14:01:39','123',NULL,NULL,NULL,NULL)
+
+[ 2017-07-08T14:02:07+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T14:02:32+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:05:34+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:08:35+08:00 ] ::1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:09:25+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(__PUBLIC__/Ueditor/php/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 33 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T14:12:36+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:13:13+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0240s ]
+NOTIC: [2] file_get_contents(__PUBLIC__/Ueditor/php/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:14:36+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [2] file_get_contents(./Conf/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-08T14:33:24+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [2] file_get_contents(./../../Conf/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T14:33:28+08:00 ] ::1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [2] file_get_contents(./../../Conf/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T15:01:47+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0350s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0250s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-07-08T15:12:52+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T15:13:14+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-07-08T15:24:43+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [2] file_get_contents(./../../Conf/config.json): failed to open stream: No such file or directory D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+NOTIC: [8] Undefined index: action D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 85 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 85 行.
+
+[ 2017-07-08T15:25:52+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 34 行.
+
+[ 2017-07-08T15:26:27+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+
+[ 2017-07-08T15:27:55+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: content D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.064004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.065004s ]
+
+[ 2017-07-08T15:29:52+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: content D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\TP\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+
+[ 2017-07-08T15:43:32+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0110s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: content D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T15:50:23+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: content D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T15:51:22+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0530s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T15:51:29+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T15:51:34+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T15:55:15+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+
+[ 2017-07-08T15:56:02+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+
+[ 2017-07-08T15:57:31+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T15:57:37+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-08T16:29:03+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:29:09+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:29:15+08:00 ] 127.0.0.1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2017-07-08T16:29:22+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:30:56+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:31:37+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0260s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T16:32:26+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+
+[ 2017-07-08T16:32:30+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T16:32:36+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T16:33:06+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+
+[ 2017-07-08T16:36:03+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+
+[ 2017-07-08T16:37:02+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: editorValueg) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T16:37:15+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T16:37:50+08:00 ] 127.0.0.1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:37:58+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T16:38:22+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T16:38:38+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+
+[ 2017-07-08T16:39:01+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:40:26+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:40:33+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0060s ]
+
+[ 2017-07-08T16:40:47+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+
+[ 2017-07-08T16:40:51+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: editorValue) D:\xampp\htdocs\TP\Application\Admin\Controller\CompanynewsController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+
+[ 2017-07-08T16:41:24+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-08T16:44:20+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zfhc_companynews` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:45:11+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:47:29+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:52:50+08:00 ] 127.0.0.1 /TP/Admin/Companynews/companynewsadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-08T16:52:55+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:53:02+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:53:48+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-07-08T16:54:08+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-07-08T16:54:15+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-07-08T19:02:10+08:00 ] 127.0.0.1 /TP/Admin/Companynews/SaveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zfhc_auth_group_access` [ RunTime:0.0870s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM zfhc_auth_group_access a INNER JOIN zfhc_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\TP\Application\Common\Common\function.php 第 17 行.
+SQL: SHOW COLUMNS FROM `zfhc_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `zfhc_auth_rule` WHERE `id` IN ('') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+

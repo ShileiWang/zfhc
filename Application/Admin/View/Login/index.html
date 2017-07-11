@@ -9,10 +9,33 @@
 	<link rel="stylesheet" href="__PUBLIC__/css/default.css" />
 	<script src="__PUBLIC__/bootstrap3/js/jquery.min.js"></script>
 	<script src="__PUBLIC__/bootstrap3/js/bootstrap.min.js"></script>
-	</style>
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function(){
-			//alert(1111);
+			// alert('1');
+			$('#username').blur(function(){
+			    var $username = $("#username").val();
+			    if($username == ''){
+			        $("#username").val('用户名不能为空');
+			    }
+			    // alert('hello world');
+			});
+
+			$('#password').blur(function(){
+			    var $password = $("#password").val();
+			    if($password == ''){
+			        $('#password').attr('type','text');
+			        $("#password").val('密码不能为空');
+			    }
+			    // alert('hello world');
+			});
+
+			$('#code').blur(function(){
+			    var $code = $("#code").val();
+			    if($code == ''){
+			        $("#code").val('验证码不能为空');
+			    }
+			    // alert('hello world');
+			});
 		});
 	</script>
 </head>

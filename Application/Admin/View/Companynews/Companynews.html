@@ -1,0 +1,58 @@
+<extend name="Index:base" />
+<block name="title"><title>轮播图列表</title></block>
+<block name="sidebar">
+	<include file="Index:sidebar" />
+</block>
+
+<block name="content">
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+		<div id="content" class="col-sm-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"><i class="glyphicon glyphicon-header"></i> 企 业 资 讯 列 表</h4>
+				</div>
+
+				<div class="panel-body">
+					<table class="table table-hover table-bordered table-condensed">
+						<tr>
+							<td>ID</td>
+							<td>轮播图名字</td>
+							<td>缩略图</td>
+							<td>URL</td>
+							<td>描述</td>
+							<td>排序</td>
+							<td>页面</td>
+							<td>时间</td>
+							<td>操作</td>
+						</tr>
+						<volist name="data" id="vo">
+							<tr>
+								<td>{$vo['id']}</td>
+								<td>{$vo['name']}</td>
+								<td><img src="__PUBLIC__/Uploads/{$vo['photo']}" width="40px"></td>	
+								<td>{$vo['url']}</td>
+								<td>{$vo['describe']}</td>
+								<td>{$vo['sort']}</td>
+								<td>{$vo['belong']}</td>
+								<td>{$vo['create_time']}</td>
+								<td>
+									<div class="btn-group btn-group-xs">
+										<a href="{:U('Admin/Slideshow/dhlSave',array('id'=>$vo['id']))}" class="btn btn-warning"><i class="glyphicon glyphicon-edit"></i></a><a href="{:U('Admin/Slideshow/deleteHandle',array('id'=>$vo['id']))}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+									</div>
+									</td>
+							</tr>
+						</volist>
+							<tr>
+								<td colspan="9">{$page}</td>
+							</tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+</block>
+

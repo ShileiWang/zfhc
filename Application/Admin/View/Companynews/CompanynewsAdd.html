@@ -1,0 +1,50 @@
+<extend name="Index:base" />
+<block name="title"><title>添加企业资讯</title></block>
+<block name="sidebar">
+	<include file="Index:sidebar" />
+</block>
+<block name="content">
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+		<div id="content" class="col-sm-8">
+		 	<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"><i class="glyphicon glyphicon-header"></i> 添	加	企  业  资  讯</h4>
+				</div>
+
+				<div class="panel-body">
+					<form class="form-horizontal" action="{:U('Admin/Ueditor')}" method='post' enctype="multipart/form-data">
+
+						<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">咨询主题:</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" placeholder="资讯主题" name="name" id="name" />
+								
+							</div>
+							<label class="col-sm-2 control-label"></label>
+						</div>						
+						<div class="panel-body">
+							<!--<script id="editor"  class="col-sm-12" type="text/plain" style="height:400px"></script> -->
+							<textarea name="editor" id="editor" class="col-sm-12" style="height:500px;"></textarea> 
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label"></label>
+							<div class="col-sm-8">
+								<button type="submit" class="btn btn-success btn-add" id='button'>添加</button>
+								
+							</div>
+							
+						</div>
+
+					</form>
+			</div>
+		</div>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+</script> 
+</block>
+

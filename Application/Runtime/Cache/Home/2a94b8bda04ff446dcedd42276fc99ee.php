@@ -8,53 +8,53 @@
 	<meta name="description" content="北京中富浩宸科技发展有限公司" />
 	<meta name="keywords" content="计算机、服务、科技、财务、旅游、设计、创意、展览" />
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="/TP/Public/hcss/animate.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="/TP/Public/hcss/icomoon.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/icomoon.css">
 	<!-- Themify Icons-->
-<!--	<link rel="stylesheet" href="/TP/Public/hcss/themify-icons.css">-->
+<!--	<link rel="stylesheet" href="/tp/Public/hcss/themify-icons.css">-->
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="/TP/Public/hcss/bootstrap.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/bootstrap.css">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="/TP/Public/hcss/magnific-popup.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/magnific-popup.css">
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="/TP/Public/hcss/owl.carousel.min.css">
-	<link rel="stylesheet" href="/TP/Public/hcss/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/owl.carousel.min.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/owl.theme.default.min.css">
 	<!-- Flexslider -->
-	<link rel="stylesheet" href="/TP/Public/hcss/flexslider.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/flexslider.css">
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="/TP/Public/hcss/style.css">
+	<link rel="stylesheet" href="/tp/Public/hcss/style.css">
 <!--	iconfont-->
-<link rel="stylesheet" href="/TP/Public/hiconfont/iconfont.css">
+<link rel="stylesheet" href="/tp/Public/hiconfont/iconfont.css">
 
 	<!-- Modernizr JS -->
-	<script src="/TP/Public/hjs/modernizr-2.6.2.min.js"></script>
+	<script src="/tp/Public/hjs/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="/TP/Public/hjs/respond.min.js"></script>
+	<script src="/tp/Public/hjs/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
 	<body>
 	<div class="gtco-loader"></div>
 	
-	<div id="page">
-
+	<div id="page">	
 <!-- 导航 -->
+<div id="base">
 		<nav class="gtco-nav" role="navigation">
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="<?php echo U('/Home/Index/index');?>"><img src="/TP/Public/himages/logo.png" alt=""></a></div>
+						<div id="gtco-logo"><a href="<?php echo U('/Home/Index/index');?>"><img src="/tp/Public/himages/logo.png" alt=""></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1 main-nav">
 						<ul>
-							<li class="active"><a href="<?php echo U('/Home/Index/index');?>" data-nav-section="home" style="color:red;"><?php echo ($data['0']['dhl']); ?></a></li>						
-							<li><a href="<?php echo U('Zl/zl');?>" data-nav-section="blog"><?php echo ($data['1']['dhl']); ?></a></li>						
-							<li><a href="<?php echo U('Zx/zx');?>" data-nav-section="blog"><?php echo ($data['2']['dhl']); ?></a></li>
-							<li><a href="<?php echo U('Jd/jd');?>" data-nav-section="blog"><?php echo ($data['3']['dhl']); ?></a></li>
-							<li><a href="<?php echo U('Qc/qc');?>" data-nav-section="portfolio"><?php echo ($data['4']['dhl']); ?></a></li>
-							<li><a href="<?php echo U('Cy/cy');?>" data-nav-section="services"><?php echo ($data['5']['dhl']); ?></a></li>
+							<li class="active"><a href="<?php echo U('/Home/Index/index');?>" data-nav-section="home" style="color:red;">首页</a></li>						
+							<li><a href="<?php echo U('/Home/Zl/zl');?>" data-nav-section="blog">展馆建筑</a></li>						
+							<li><a href="<?php echo U('/Home/Zx/zx');?>" data-nav-section="blog">房产装修</a></li>
+							<li><a href="<?php echo U('/Home/Jd/jd');?>" data-nav-section="blog">酒店资讯</a></li>
+							<li><a href="<?php echo U('/Home/Qc/qc');?>" data-nav-section="portfolio">汽车资讯</a></li>
+							<li><a href="<?php echo U('/Home/Cy/cy');?>" data-nav-section="services">新闻动态</a></li>
 
 						</ul>
 					</div>
@@ -62,11 +62,13 @@
 				
 			</div>
 		</nav>
-<!-- banner -->
+</div>
+
+ <!--banner -->
 	<div id="gtco-hero" class="js-fullheight"  data-section="home" style="padding-top:7rem;">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-				<li class="col-md-10 col-md-offset-1" style="background-image: url(/TP/Public/himages/banner-1.jpg);">
+				<li class="col-md-10 col-md-offset-1" style="background-image: url(/tp/Public/himages/banner-1.jpg);">
 <!--		   		<div class="overlay"></div>-->
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -77,7 +79,7 @@
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(/TP/Public/himages/banner-3.jpg);">
+		   	<li style="background-image: url(/tp/Public/himages/banner-3.jpg);">
 <!--		   		<div class="overlay"></div>-->
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -89,7 +91,7 @@
 		   		</div>
 				</div>
 		   	</li>
-		   	<li style="background-image: url(/TP/Public/himages/banner-2.jpg);">
+		   	<li style="background-image: url(/tp/Public/himages/banner-2.jpg);">
 <!--		   		<div class="overlay"></div>-->
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -113,7 +115,7 @@
 				</div>
 <!--
 				<div class="row">
-					<img class="col-md-12 col-sm-12 col-xs-12" src="/TP/Public/himages/pc-js.jpg" alt="">
+					<img class="col-md-12 col-sm-12 col-xs-12" src="/tp/Public/himages/pc-js.jpg" alt="">
 				</div>
 -->
 				<div class="row">
@@ -121,7 +123,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-7.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-7.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>X STAGE</h2>
@@ -135,7 +137,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-2.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-2.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>VIRTUAL REALITY</h2>
@@ -149,7 +151,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-3.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-3.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>VENTUZ</h2>
@@ -165,7 +167,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-4.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-4.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>VENTUZ</h2>
@@ -181,7 +183,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-5.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-5.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>RADAR TOUCH</h2>
@@ -196,7 +198,7 @@
 					<a href="#" class="gtco-card-item has-text">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/TP/Public/himages/qc-zs-6.jpg" alt="Image" class="img-responsive">
+							<img src="/tp/Public/himages/qc-zs-6.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="gtco-text text-left">
 							<h2>3D MAPPING</h2>
@@ -222,51 +224,51 @@
 				</div>
 				<div class="row">
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_2.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_2.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_2.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_2.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_1.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_1.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_1.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_1.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_3.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_3.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_3.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_3.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_4.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_4.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_4.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_4.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img-5(1).jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img-5(1).jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img-5(1).jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img-5(1).jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_6.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_6.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_6.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_6.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
@@ -274,51 +276,51 @@
 				<!-- end -->
 				<div class="row">
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_5a.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_5a.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_5a.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_5a.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_8.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_8.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_8.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_8.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_9.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_9.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_9.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_9.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_10.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_10.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_10.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_10.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_11.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_11.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_11.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_11.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_12.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_12.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_12.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_12.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
@@ -326,51 +328,51 @@
 				<!-- end -->
 				<div class="row">
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_13.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_13.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_13.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_13.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_14.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_14.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_14.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_14.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_15.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_15.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_15.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_15.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_16.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_16.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_16.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_16.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_17.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_17.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_17.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_17.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
 					<div class="col-md-2">
-						<a href="/TP/Public/himages/img_18.jpg" class="gtco-card-item image-popup" title="Project name here.">
+						<a href="/tp/Public/himages/img_18.jpg" class="gtco-card-item image-popup" title="Project name here.">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
-								<img src="/TP/Public/himages/img_18.jpg" alt="Image" class="img-responsive">
+								<img src="/tp/Public/himages/img_18.jpg" alt="Image" class="img-responsive">
 							</figure>
 						</a>
 					</div>
@@ -523,7 +525,8 @@
 			</div>
 		</div>
 	</div>
-	
+
+<div id="bottom">
 <!-- 底部 -->
 	<footer id="gtco-footer" role="contentinfo" style="background:#000;">
 		<div class="gtco-container">
@@ -540,7 +543,7 @@
 					</p>
 					<div class="pull-right  col-md-3 col-sm-6 animate-box"> 
 						<small class="block" style="margin:0 0 5px 12px; color:#fff;">官方微信</small>
-						<img  src="/TP/Public/himages/weiixn.jpg" alt="">
+						<img  src="/tp/Public/himages/weiixn.jpg" alt="">
 				   </div>
 											
 				</div>
@@ -549,25 +552,27 @@
 		</div>
 	</footer>
 </div>
+
+</div>
 	<!-- jQuery -->
-	<script src="/TP/Public/hjs/jquery.min.js"></script>
+	<script src="/tp/Public/hjs/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="/TP/Public/hjs/jquery.easing.1.3.js"></script>
+	<script src="/tp/Public/hjs/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="/TP/Public/hjs/bootstrap.min.js"></script>
+	<script src="/tp/Public/hjs/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="/TP/Public/hjs/jquery.waypoints.min.js"></script>
+	<script src="/tp/Public/hjs/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
-	<script src="/TP/Public/hjs/owl.carousel.min.js"></script>
+	<script src="/tp/Public/hjs/owl.carousel.min.js"></script>
 	<!-- countTo -->
-	<script src="/TP/Public/hjs/jquery.countTo.js"></script>
+	<script src="/tp/Public/hjs/jquery.countTo.js"></script>
 	<!-- Flexslider -->
-	<script src="/TP/Public/hjs/jquery.flexslider-min.js"></script>
+	<script src="/tp/Public/hjs/jquery.flexslider-min.js"></script>
 	<!-- Magnific Popup -->
-	<script src="/TP/Public/hjs/jquery.magnific-popup.min.js"></script>
-	<script src="/TP/Public/hjs/magnific-popup-options.js"></script>
+	<script src="/tp/Public/hjs/jquery.magnific-popup.min.js"></script>
+	<script src="/tp/Public/hjs/magnific-popup-options.js"></script>
 	<!-- Main -->
-	<script src="/TP/Public/hjs/main.js"></script>
+	<script src="/tp/Public/hjs/main.js"></script>
 
 
 	</body>
